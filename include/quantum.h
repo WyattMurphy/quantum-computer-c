@@ -9,11 +9,11 @@
 typedef struct {
     double complex alpha;  // Amplitude for |0⟩ state
     double complex beta;   // Amplitude for |1⟩ state
-} Qubit;
+} s_qubit;
 
 // Function declarations
-void init_qubit(Qubit *q, double complex alpha, double complex beta);
-void display_qubit(const Qubit *q);
-void normalize_qubit(Qubit *q);
+void init_qubit( s_qubit*, double complex alpha, double complex beta);
+void display_qubit(const s_qubit *q);
+void normalize_qubit(s_qubit *q);
 
 #endif // QUANTUM_H
